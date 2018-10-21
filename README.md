@@ -9,6 +9,5 @@ Implement the following API for obtaining and releasing a pid:
 * int allocate map(void)—Creates and initializes a data structure for representing pids; returns—1 if unsuccessful, 1 if successful 
 * int allocate pid(void)—Allocates and returns a pid; returns— 1 if unable to allocate a pid (all pids are in use) 
 * void release pid(int pid)—Releases a pid  
- 
-Modify the above problem by writing a multithreaded program that tests your solution. You will create a number of threads—for example, 100—and each thread will request a pid, sleep for a random period of time, and then release the pid. (Sleeping for a random period of time approximates the typical pid usage in which a pid is assigned to a new process, the process executes and then terminates, and the pid is released on the process’s termination.)  
+
  
